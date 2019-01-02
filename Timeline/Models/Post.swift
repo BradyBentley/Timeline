@@ -15,7 +15,7 @@ class Post {
     var photoData: Data?
     let timestamp: Date
     let caption: String
-    let comments: [Comment]
+    var comments: [Comment]
     var photo: UIImage? {
         get {
             guard let photoData = photoData else { return nil }
@@ -27,7 +27,7 @@ class Post {
     }
     
     // MARK: - Initialization
-    init(photo: UIImage, timestamp: Date = Date(), caption: String, comments: [Comment]){
+    init(photo: UIImage, timestamp: Date = Date(), caption: String, comments: [Comment] = []){
         self.timestamp = timestamp
         self.caption = caption
         self.comments = comments
