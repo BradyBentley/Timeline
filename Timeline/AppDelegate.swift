@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        PostController.shared.checkAccountStatus { (success) in
+            if success {
+                print("Successful logging into iCloud Account")
+            }
+        }
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { (success, error) in
+            if let error = error {
+                print("\(error)")
+                return
+            }
+            success ? print("Successfully allowed push notification") : print("Didn't allow push notification")
+        }
+        
         return true
     }
 

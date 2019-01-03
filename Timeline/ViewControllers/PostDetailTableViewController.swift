@@ -33,14 +33,19 @@ class PostDetailTableViewController: UITableViewController {
         presentAlertController()
     }
     @IBAction func shareButtonTapped(_ sender: Any) {
+        guard let post = post, let photo = post.photo else { return }
+        let activityViewController = UIActivityViewController(activityItems: [photo, post.caption], applicationActivities: nil)
+        DispatchQueue.main.async {
+            self.present(activityViewController, animated: true)
+        }
     }
     @IBAction func followPostButtonTapped(_ sender: Any) {
     }
     
     // MARK: - Functions
     func updateViews() {
-        guard let post = post else { return }
-        photoImageView.image = post.photo
+//        guard let post = post else { return }
+//        photoImageView.image = post.photo
         
     }
 
@@ -75,5 +80,6 @@ extension PostDetailTableViewController {
         let dismissAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         alertController.addAction(addAction)
         alertController.addAction(dismissAction)
+        present(alertController, animated: true)
     }
 }

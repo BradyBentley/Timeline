@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26602E6E21DD65CD00FBECB1 /* SearchableRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26602E6D21DD65CD00FBECB1 /* SearchableRecord.swift */; };
+		26602E7021DD76EA00FBECB1 /* PhotoSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26602E6F21DD76EA00FBECB1 /* PhotoSelectViewController.swift */; };
+		26602E7821DED29100FBECB1 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26602E7721DED29100FBECB1 /* UIViewControllerExtension.swift */; };
 		26CD767221DBF06900511D22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CD767121DBF06900511D22 /* AppDelegate.swift */; };
 		26CD767721DBF06900511D22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26CD767521DBF06900511D22 /* Main.storyboard */; };
 		26CD767921DBF06A00511D22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26CD767821DBF06A00511D22 /* Assets.xcassets */; };
@@ -22,6 +25,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26602E6D21DD65CD00FBECB1 /* SearchableRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchableRecord.swift; sourceTree = "<group>"; };
+		26602E6F21DD76EA00FBECB1 /* PhotoSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectViewController.swift; sourceTree = "<group>"; };
+		26602E7721DED29100FBECB1 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		26CD766E21DBF06900511D22 /* Timeline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timeline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26CD767121DBF06900511D22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26CD767621DBF06900511D22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -81,6 +87,7 @@
 				26CD769021DBF36200511D22 /* Models */,
 				26CD769621DBF72900511D22 /* ModelControllers */,
 				26CD769B21DC09BA00511D22 /* View */,
+				26602E7721DED29100FBECB1 /* UIViewControllerExtension.swift */,
 			);
 			path = Timeline;
 			sourceTree = "<group>";
@@ -99,6 +106,7 @@
 				26CD768721DBF27B00511D22 /* PostListTableViewController.swift */,
 				26CD768A21DBF2EE00511D22 /* PostDetailTableViewController.swift */,
 				26CD768C21DBF32700511D22 /* AddPostTableViewController.swift */,
+				26602E6F21DD76EA00FBECB1 /* PhotoSelectViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -108,6 +116,7 @@
 			children = (
 				26CD768E21DBF35D00511D22 /* Post.swift */,
 				26CD769221DBF5A600511D22 /* Comment.swift */,
+				26602E6D21DD65CD00FBECB1 /* SearchableRecord.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -209,11 +218,14 @@
 			files = (
 				26CD767221DBF06900511D22 /* AppDelegate.swift in Sources */,
 				26CD769321DBF5A600511D22 /* Comment.swift in Sources */,
+				26602E6E21DD65CD00FBECB1 /* SearchableRecord.swift in Sources */,
 				26CD768821DBF27B00511D22 /* PostListTableViewController.swift in Sources */,
 				26CD769A21DC09B600511D22 /* PostTableViewCell.swift in Sources */,
 				26CD768D21DBF32700511D22 /* AddPostTableViewController.swift in Sources */,
 				26CD769521DBF72300511D22 /* PostController.swift in Sources */,
+				26602E7021DD76EA00FBECB1 /* PhotoSelectViewController.swift in Sources */,
 				26CD768B21DBF2EE00511D22 /* PostDetailTableViewController.swift in Sources */,
+				26602E7821DED29100FBECB1 /* UIViewControllerExtension.swift in Sources */,
 				26CD768F21DBF35D00511D22 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
